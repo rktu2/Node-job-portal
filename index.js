@@ -41,6 +41,7 @@ app.use(morgan('dev'));
 app.use('/api/v1/', testRoutes);
 app.use("/api/v1/", authRoutes);
 app.use("/api/v1/", userRoutes)
+app.use("/api/v1/",jobRoutes);
 app.use(errorMiddleware);
 
 //port
